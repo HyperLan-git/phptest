@@ -1,3 +1,5 @@
+import {sha256} from './js-sha256.js';
+
 function printAllVars(obj) {
 	let result = "";
 	for(name in obj)
@@ -9,7 +11,6 @@ function login() {
 	let user = document.getElementById('username'),
 		pswrd = document.getElementById('password');
 
-	var sha256 = require('js-sha256.js');
 	const params = {
 		username: user.value,
 		passwordhash: sha256(pswrd.value),

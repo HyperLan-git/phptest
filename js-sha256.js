@@ -7,7 +7,7 @@
  * @license MIT
  */
 /*jslint bitwise: true */
-(function () {
+(export function sha256() {
   'use strict';
 
   var ERROR = 'input is invalid type';
