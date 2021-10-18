@@ -1,6 +1,6 @@
 <?php
     echo '<head>
-        <script src="script.js"></script>
+        <script src="./script.js"></script>
     </head>
     <body>
         <p>
