@@ -1,3 +1,3 @@
 <?php
-    echo 'Welcome' . $_POST["name"] . '<br>';
+    echo 'Welcome ' . $_GET["name"] . '<br>';
 ?>
