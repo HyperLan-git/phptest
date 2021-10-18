@@ -1,5 +1,3 @@
-import {sha256} from './js-sha256.js';
-
 function printAllVars(obj) {
 	let result = "";
 	for(name in obj)
