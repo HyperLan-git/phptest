@@ -6,7 +6,7 @@
         echo "<br>" . $row['User'];
     }
     echo '<br>
-        <form action="welcome_get.php" method="get">
+        <form action="form.php" method="get">
             Name: <input type="text" name="name"><br>
             <input type="submit">
         </form>'
