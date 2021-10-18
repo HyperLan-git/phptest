@@ -1,13 +1,13 @@
 <?php
     echo '<head>
-        <script src="./script.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <p>
             This hsould print users lul <br>';
     $conn = new PDO("mysql:host=localhost;dbname=mysql","root","tesmoche");
     $sql =  "SELECT * FROM user";
-    foreach  ($conn->query($sql) as $row) {
+    foreach($conn->query($sql) as $row) {
         echo "<br>" . $row['User'];
     }
     echo '<br>

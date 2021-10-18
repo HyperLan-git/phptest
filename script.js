@@ -13,7 +13,7 @@ function login() {
 	const params = {
 		username: user.value,
 		passwordhash: sha256(pswrd.value),
-		hashtype: 'SHA-256';
+		hashtype: 'SHA-256'
 	};
 	const options = {
 		method: 'POST',
