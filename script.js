@@ -5,7 +5,7 @@ function printAllVars(obj) {
 	return result;
 }
 
-function login() {
+login = function() {
 	let user = document.getElementById('username'),
 		pswrd = document.getElementById('password');
 

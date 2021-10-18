@@ -1,7 +1,7 @@
 <?php
 echo '<head>
     <script type="module" src="js-sha256.js"></script>
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <p>
