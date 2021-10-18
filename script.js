@@ -17,7 +17,7 @@ function login() {
 	};
 	const options = {
 		method: 'POST',
-		body: JSON.stringify(params);  
+		body: JSON.stringify(params)
 	};
 	fetch('login.php', options)
     .then(response => response.json())
