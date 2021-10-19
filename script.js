@@ -18,7 +18,6 @@ login = function() {
 		body: formData
 	};
 	fetch('login.php', options)
-    .then(response => response.json())
     .then(response => {
         // Do something with response.
 		window.alert(response);
