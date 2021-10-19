@@ -1,5 +1,5 @@
 <?php
-define("SUPPORTED_HASHES", {"SHA-256"});
+define("SUPPORTED_HASHES", array("SHA-256", "SHA-512"));
 
 function check_hash($type, $hash) {
 	const var hex_chars = "0123456789abcdef";
