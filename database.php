@@ -8,7 +8,7 @@ function getFromTable($col, $tablename) {
 function registerUser($username, $passwordhash, $hashtype) {
 	$conn = new PDO("mysql:host=localhost;dbname=testdb", "root", "tesmoche");
 	$sql = 'INSERT INTO `pma__users` (`ID`, `username`, `passwordhash`, `hashtype`) VALUES (' .
-		'NULL, ' . $username . ', ' . $passwordhash . ', ' . $hashtype . ')';
+		'NULL, \'' . $username . '\', \'' . $passwordhash . '\', \'' . $hashtype . '\')';
 	return $conn->query($sql);
 }
 
