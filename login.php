@@ -1,6 +1,6 @@
 <?php
     require 'database.php';
-    $user = getUser($_POST['username']).fetch();
+    $user = getUser($_POST['username'])->fetch();
     if(!$user) {
         http_response_code(400);
         echo 'Non existent user';
