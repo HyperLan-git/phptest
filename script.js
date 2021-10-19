@@ -51,6 +51,7 @@ register = function() {
 	});
 }
 
+//TODO send help
 verifyLoggedIn = function() {
 	return 0;
 }

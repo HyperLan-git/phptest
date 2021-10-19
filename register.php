@@ -17,7 +17,7 @@ if(!check_hash($hashtype, $pwd)) {
 	exit;
 }
 
-echo registerUser($user, $pwd, $hashtype);
+registerUser($user, $pwd, $hashtype);
 
 http_response_code(201);
 ?>
