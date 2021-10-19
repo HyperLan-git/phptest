@@ -5,7 +5,7 @@ require 'utils.php';
 $user = $_POST['username'];
 $hashtype = $_POST['hashtype'];
 $pwd = $_POST['passwordhash'];
-if(!array_search($hashtype, SUPPORTED_HASHES)) {
+if(array_search($hashtype, SUPPORTED_HASHES) == -1) {
 	echo 'Unsupported or insecure hash method';
 	http_response_code(400);
 	exit;
