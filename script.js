@@ -9,15 +9,13 @@ login = function() {
 	let user = document.getElementById('username'),
 		pswrd = document.getElementById('password');
 
-	const params = {
-		username: user.value,
-		passwordhash: sha256(pswrd.value),
-		hashtype: 'SHA-256'
-	};
-	window.alert(params['passwordhash']);
+	var formData = new FormData();
+	formData.append('username', user.value);
+	formData.append('passwordhash', sha256(pswrd.value));
+	formData.append('hashtype', 'SHA-256');
 	const options = {
 		method: 'POST',
-		body: JSON.stringify(params)
+		body: formData
 	};
 	fetch('login.php', options)
     .then(response => response.json())
