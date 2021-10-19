@@ -22,6 +22,6 @@ login = function() {
     .then(response => response.json())
     .then(response => {
         // Do something with response.
-		window.alert(printAllVars(response[0]));
+		window.alert(response);
     });
 }
