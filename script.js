@@ -46,6 +46,7 @@ register = function() {
         // Do something with response.
 		window.alert("taaaa");
 		window.alert(response);
+		window.alert(printAllVars(response));
 	});
 }
 
