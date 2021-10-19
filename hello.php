@@ -1,4 +1,6 @@
 <?php
+require 'database.php'
+
 echo '<head>
     <script type="module" src="js-sha256.js"></script>
     <script src="script.js"></script>
@@ -6,9 +8,9 @@ echo '<head>
 <body>
     <p>
         This hsould print users lul <br>';
-$conn = new PDO("mysql:host=localhost;dbname=mysql", "root", "tesmoche");
-$sql = "SELECT * FROM user";
-foreach ($conn->query($sql) as $row) {
+
+
+foreach(getFromTable('*', 'user') as $row) {
     echo "<br>" . $row['User'];
 }
 echo '<br>
@@ -22,6 +24,13 @@ echo '<br>
         Username : <input type="text" name="username" id="username"><br>
         Password : <input type="password" name="password" id="password"><br>
         <button type="button" onclick="login()">Login</button>
+    </p>
+    <p>
+        Register : <br>
+        Username : <input type="text" name="username" id="username-register"><br>
+        Password : <input type="password" name="password" id="password-register"><br>
+        Password confirmation : <input type="password" name="passwordconfirm" id="passwordconfirm"><br>
+        <button type="button" onclick="register()">Register</button>
     </p>
 </body>';
 ?>
