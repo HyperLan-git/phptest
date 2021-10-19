@@ -5,7 +5,7 @@ define("HEX_CHARS", "0123456789abcdefABCDEF");
 function check_hash($type, $hash) {
 	switch($type) {
 		case 'SHA-256':
-			if(strlen($hash) != 65)
+			if(strlen($hash) != 64)
 				return 0;
 
 			foreach(str_split($hash) as $c)
