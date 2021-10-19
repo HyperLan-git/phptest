@@ -13,6 +13,6 @@
         exit;
     }
 
-    $_COOKIE['sessionID'] = 'new session ID ' . time();
+    setcookie('sessionID', 'new session ID ' . time());
     http_response_code(201);
 ?>
