@@ -14,6 +14,7 @@ login = function() {
 		passwordhash: sha256(pswrd.value),
 		hashtype: 'SHA-256'
 	};
+	window.alert(user.value);
 	const options = {
 		method: 'POST',
 		body: JSON.stringify(params)
