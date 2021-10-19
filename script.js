@@ -45,8 +45,9 @@ register = function() {
     .then(response => {
         // Do something with response.
 		window.alert("taaaa");
-		window.alert(response);
-		window.alert(printAllVars(response));
+		window.alert(response.status);
+		window.alert(response.body);
+		window.alert(printAllVars(response.body));
 	});
 }
 
