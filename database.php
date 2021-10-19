@@ -14,7 +14,7 @@ function registerUser($username, $passwordhash, $hashtype) {
 
 function getUser($username) {
 	$conn = new PDO("mysql:host=localhost;dbname=testdb", "root", "tesmoche");
-	$sql = 'SELECT * from `pma__users` WHERE `username` = ' . $username;
+	$sql = 'SELECT * from `pma__users` WHERE `username` = \'' . $username . '\'';
 	return $conn->query($sql);
 }
 ?>
