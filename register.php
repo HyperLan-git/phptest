@@ -1,11 +1,11 @@
 <?php
 require 'database.php';
 require 'utils.php';
-const var supported_hashes = {"SHA-256"};
+
 $user = $_POST['username'];
 $hashtype = $_POST['hashtype'];
 $pwd = $_POST['passwordhash'];
-if(!array_search($hashtype, supported_hashes)) {
+if(!array_search($hashtype, SUPPORTED_HASHES)) {
 	http_response_code(400);
 	echo 'Unsupported or insecure hash method';
 	exit;
