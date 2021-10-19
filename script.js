@@ -40,6 +40,7 @@ register = function() {
 		method: 'POST',
 		body: formData
 	};
+	window.alert("test");
 	fetch('register.php', options)
     .then(response => response.json())
     .then(response => {
