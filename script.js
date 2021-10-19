@@ -29,7 +29,7 @@ register = function() {
 	let user = document.getElementById('username-register'),
 		pswrd = document.getElementById('password-register');
 
-	if(pswrd.value != document.getElementById('passwordconfirm'))
+	if(pswrd.value != document.getElementById('passwordconfirm').value)
 		window.location.reload(false);
 
 	var formData = new FormData();
