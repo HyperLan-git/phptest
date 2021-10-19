@@ -42,9 +42,9 @@ register = function() {
 	};
 	window.alert("test");
 	fetch('register.php', options)
-    .then(response => response.json())
     .then(response => {
         // Do something with response.
+		window.alert("taaaa");
 		window.alert(response);
 	});
 }
