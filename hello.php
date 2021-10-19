@@ -21,7 +21,7 @@ echo '<br>
         Login : <br>
         Username : <input type="text" name="username" id="username"><br>
         Password : <input type="password" name="password" id="password"><br>
-        <button type="button" onclick="login()"></button>
+        <button type="button" onclick="login()">Login</button>
     </p>
 </body>';
 ?>
