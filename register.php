@@ -1,6 +1,6 @@
 <?php
-require 'database.php'
-require 'utils.php'
+require 'database.php';
+require 'utils.php';
 const var supported_hashes = {"SHA-256"};
 $user = $_POST['username'];
 $hashtype = $_POST['hashtype'];

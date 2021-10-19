@@ -1,5 +1,5 @@
 <?php
-require 'database.php'
+require 'database.php';
 
 echo '<head>
     <script type="module" src="js-sha256.js"></script>
